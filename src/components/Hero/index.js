@@ -6,7 +6,7 @@ function Hero ({ Carousell, Fade, IMAGES }) {
           <Carousell time={5000}>
             {IMAGES.map((image, index) => (
               <img 
-                className="object-fill h-[170px] w-[340px] max-w-sm rounded-2xl" 
+                className="object-fill h-auto w-full max-w-sm rounded-2xl" 
                 key={index} 
                 src={image.imageUrl} 
                 alt={image.placeHolder} />
