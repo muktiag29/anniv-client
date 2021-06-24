@@ -37,7 +37,7 @@ function Page() {
         Carousell={Carousell}
         Fade={Fade}
         IMAGES={IMAGES} />
-      {(dataUser.email !== "ajioke22@gmail.com" || dataUser.email !== "dianardiyanti29@gmail.com") && (
+      {(dataUser.email !== "ajioke22@gmail.com" && dataUser.email !== "dianardiyanti29@gmail.com") && (
         <Greeting 
           cx={cx}
           isGreet={isGreet} 
@@ -45,11 +45,11 @@ function Page() {
           Zoom={Zoom} />
       )}
       <Quote Fade={Fade} />
-      {(dataUser.email !== "ajioke22@gmail.com" || dataUser.email !== "dianardiyanti29@gmail.com") && (
+      {(dataUser.email !== "ajioke22@gmail.com" && dataUser.email !== "dianardiyanti29@gmail.com") && (
         <Form Fade={Fade} email={dataUser.email} isRefresh={isRefresh} setRefresh={setRefresh} />
       )}
       <Comment email={dataUser.email} isRefresh={isRefresh} />
-      {(dataUser.email !== "ajioke22@gmail.com" || dataUser.email !== "dianardiyanti29@gmail.com") && (
+      {(dataUser.email !== "ajioke22@gmail.com" && dataUser.email !== "dianardiyanti29@gmail.com") && (
         <Footer Fade={Fade} />
       )}
     </div>
